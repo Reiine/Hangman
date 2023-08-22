@@ -1,0 +1,162 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.drawing-cover {
+  position: relative;
+  height: 23rem;
+}
+.pole {
+  height: 20rem;
+  width: 1rem;
+  background-color: black;
+  margin-left: 29%;
+}
+
+.bottom-bar {
+  height: 1rem;
+  width: 20rem;
+  background-color: black;
+}
+
+.ceil {
+  position: relative;
+  height: 1rem;
+  width: 10rem;
+  background-color: black;
+  margin-left: auto;
+  right: 4.2rem;
+}
+.rope {
+  height: 3rem;
+  width: 1rem;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: 4.2rem;
+}
+.head {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+  border: 10px solid black;
+  margin-left: auto;
+  position: absolute;
+  right: 3.1rem;
+  top: 2.8rem;
+}
+
+.hang-body {
+  height: 4rem;
+  width: 0.5rem;
+  background-color: black;
+  position: absolute;
+  top: 5.9rem;
+  right: 4.5rem;
+}
+
+.hand1 {
+  height: 4rem;
+  width: 0.5rem;
+  background-color: black;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 6rem;
+  top: 5rem;
+}
+.hand2 {
+  height: 4rem;
+  width: 0.5rem;
+  background-color: black;
+  position: absolute;
+  transform: rotate(127deg);
+  right: 2.7rem;
+  top: 5rem;
+}
+.leg1 {
+  height: 4rem;
+  width: 0.5rem;
+  background-color: black;
+  position: absolute;
+  transform: rotate(30deg);
+  right: 5.5rem;
+  top: 9.5rem;
+}
+.leg2 {
+  height: 4rem;
+  width: 0.5rem;
+  background-color: black;
+  position: absolute;
+  transform: rotate(137deg);
+  right: 3.2rem;
+  top: 9.3rem;
+}
+
+.word {
+  display: flex;
+  flex-direction: row;
+  padding-right: 3rem;
+}
+
+.letters {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.renderLetter {
+  margin-right: 1rem;
+  border-bottom: 7px solid black;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.keyboard-cover {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.alphabet {
+  margin-right: 2rem;
+  margin-top: 1rem;
+  color: black;
+  background-color: yellow;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+.alphabet:hover {
+  background-color: peachpuff;
+  transform: scale(1.15);
+}
+
+.disnone {
+  display: none;
+}
+
+.disable {
+  cursor: default;
+  background-color: gray;
+}
+.disable:hover {
+  cursor: default;
+  transform: none;
+  background-color: gray;
+}
+
+.correct {
+  background-color: seagreen;
+}
+
+.visible {
+  visibility: visible;
+}
+
+@media screen and (max-width: 1456px) {
+}
