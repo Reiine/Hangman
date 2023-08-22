@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import words from './movies.json';
 import HangmanDrawing from './components/HangmanDrawing';
@@ -8,9 +8,11 @@ import Keyboard from './components/Keyboard';
 interface AppProps {}
 
 function App({}: AppProps) {
-  const [wordToGuess, setWordToGuess] = useState<string>(() => {
-    return words[Math.floor(Math.random() * words.length)].toLowerCase();
-  });
+  const [wordToGuess, setWordToGuess] = useState('');
+  const word = words[Math.floor(Math.random() * words.length)].toLowerCase()
+  useEffect(()=>{
+    setWordToGuess(word);
+  },[])
   const [guessedWord, setGuessedWord] = useState<string[]>([]);
   
   const uniqueLetters = Array.from(new Set(wordToGuess.replace(/\s/g, '')));
